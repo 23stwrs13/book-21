@@ -1,0 +1,355 @@
+@media (max-width: 800px) {
+    /* медиа для бургер меню */
+    .burger { 
+        display: flex ;
+        justify-content: center;
+        margin: 0 auto;
+        margin-top: 15px;
+    }
+    .lin-delet{
+        display: block;
+    }
+    .nav{
+        display: none;
+        margin: 0 auto;
+        justify-content: center;
+        flex-direction: column;
+        position: fixed;
+        height: 20%;
+        width: 40%;
+        top: 0; bottom: 0; left: 0; right: 0;
+        z-index: 50;
+        overflow-y: auto;
+        padding: 100px 60px;
+        background-color: #404C62;
+        animation: burgerAnimation 0.4s;
+        border-radius: 20px;
+        gap: 10px;
+    }
+    .footer-nav{
+        display: block;
+    }
+    .nav-text-navig {
+        flex-direction: column;
+        margin: 0 auto;
+        text-align: center;
+    }
+    .logo{
+        margin: 0 auto;
+    }
+    .cent-nav{
+        order: 1;
+    }
+}
+@media (max-width: 1800px) {
+    .slid-uupin{
+        margin-top: 28%;
+    }    
+}
+@media (max-width: 1550px) {
+    .slid-uupin{
+        margin-top: 26%;
+    }    
+}
+@media (max-width: 1400px) {
+    .slid-uupin{
+        margin-top: 24%;
+    }    
+}
+@media (max-width: 1200px) {
+    .box-footer {
+        gap: 170px;
+    }
+    .sliedes-box{
+        gap: 20px;
+    }
+    .slaides-text{
+        width: 45%;
+    }
+    .slid-uupin{
+        margin-top: 20%;
+    } 
+    .slidders-texts-box {
+        gap: 30%;
+    }
+    .text-info-school{
+        gap: 10px;
+    }
+    .one-line-innfor {
+        gap: 10%;
+    }
+}
+@media (max-width: 1000px) {
+    .box-footer {
+        gap: 9%;
+    }
+    .box-vie {
+        display: grid;
+    }
+    .img-box-vie {
+        order: 1;
+        margin: 0 auto;
+    }
+    .text-box-vie {
+        width: 80%;
+        order: 2;
+        margin: 0 auto;
+    }
+    .item>img{
+        width: 600px;
+        height: 400px;
+    }
+    .divclaide-knop{
+        margin-top: 170px;
+    }
+    .item02>img{
+        width: 324px;
+        height: 500px;
+    }
+    .slaides-text{
+        gap: 10px;
+    }
+    .slaides-text>ul>li{
+        font-size: 30px;
+    }
+    .slaides-text {
+        height: 500px;
+    }
+    .book-et{
+        width: 50px;
+        height: 50px;
+        margin-top: 220px;
+    }
+    .slid-uupin{
+        margin-top: 20%;
+    } 
+    .slidders-texts-box {
+        gap: 25%;
+    }
+    .text-info-school {
+        width: 300px;
+        height: 169px;
+    }
+    .zag-info-sl {
+        font-size: 20px;
+    }
+    .text-lin-infor {
+        font-size: 16px;
+    }
+    .img-lin-infor {
+        width: 20px;
+        background-size: cover;
+    }
+    .addres{
+        height: 27px;
+    }
+    .phone{
+        height: 20px;
+    }
+    .mail{
+        height: 15px;
+    }
+    .uuping{
+        margin-top: 8px;
+    }
+    .iconic-ihfo{
+        margin-top: 80px;
+    }
+    .one-line-innfor{
+        display: grid;
+        gap: 20px;
+    }
+    .innfor-text-box {
+        width: 90%;
+        margin: 0 auto;
+        order: 2;
+    }
+    .innfor-img1,.innfor-img2{
+        order: 1;
+    }
+    .zag-innfor-text-z,.text-innfor-text-t{
+        text-align: center;
+    }
+    .link-text {
+        margin: 0 auto;
+        margin-top: 30px;
+    }
+    .lit{
+        height: 180px;
+    }
+    .litt{
+        height: 230px;
+    }
+}
+@media (max-width: 950px) {
+    .sliedes-box{
+        display: grid;
+    }
+    .slaides-text{
+        width: 90%;
+        margin: 0 auto;
+        height: 300px;
+    }
+    .item02>img{
+        width: 500px;
+        height: 771px;
+    }
+    .book-et{
+        margin-top: 370px;
+    }
+    .text-info-school{
+        height: 150px;
+    }
+}
+@media (max-width: 800px) {
+    .box-footer {
+        padding-top: 10px;
+    }
+    .icons-footer {
+        gap: 5px;
+    }
+    .iconn{
+        width: 30px;
+        height: 30px;
+        margin-top: 5px;
+    }
+    .of-sai-f {
+        width: 40px;
+        height: 40px;
+    }
+    .foot>a{
+        font-size: 20px;
+    }
+    .item>img{
+        width: 500px;
+        height: 300px;
+    }
+    .divclaide-knop{
+        height: 50px;
+        width: 50px;
+        margin-top: 120px;
+    }
+    .slider{
+        gap: 10px;
+    }
+    .book-et{
+        margin-top: 370px;
+    }
+    .slid-ic{
+        gap: 20px;
+    }
+    .text-info-ic{
+        width: 180px;
+    }
+    .lines-info{
+        gap: 5px;
+    }
+}
+@media (max-width: 780px) {
+    .slid-uupin{
+        margin-top: 15%;
+    } 
+    .slidders-texts-box {
+        gap: 22%;
+    }
+    .text-info-school{
+        gap: 5px;
+    }
+    .iconic-ihfo{
+        margin-top: 50px;
+    }
+}
+@media (max-width: 650px) {
+    .box-footer {
+        gap: 5%;
+        height: 106px;
+    }
+    .footer-logo {
+        width: 116px;
+        height: 90px;
+    }
+    .foot>a{
+        font-size: 18px;
+    }
+    .item>img{
+        width: 350px;
+        height: 250px;
+    }
+    .divclaide-knop{
+        margin-top: 100px;
+    }
+    .img-box-vie {
+        width: 400px;
+        height: 269px;
+    }
+    .item02>img{
+        width: 400px;
+        height: 617px;
+    }
+    .book-et{
+        margin-top: 270px;
+    }
+    .slaides-text{
+        margin-bottom: 70px;
+    }
+    .slid-uupin{
+        margin-top: 12%;
+    } 
+    .slidders-texts-box {
+        gap: 10%;
+    }
+    .zag-info-sl{
+        font-size: 18px;
+    }
+    .text-info-school{
+        width: 280px;
+    }
+    .innfor-img1 {
+        width: 400px;
+        height: 271px;
+        margin: 0 auto;
+    }
+    .innfor-img2 {
+        width: 400px;
+        height: 272px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 550px) {
+    .item02>img{
+        width: 350px;
+        height: 540px;
+    }
+    .book-et{
+        margin-top: 200px;
+    }
+    .slid-uupin{
+        margin-top: 10%;
+    } 
+    .slidders-texts-box {
+        gap: 11%;
+    }
+    .zag-info-sl{
+        font-size: 15px;
+    }
+    .text-lin-infor {
+        font-size: 12px;
+    }
+    .text-info-ic{
+        width: 150px;
+        font-size: 13px;
+    }
+    .text-info-school{
+        width: 250px;
+    }
+    .text-info-school {
+        background: none;
+    }
+    .iconic-ihfo{
+        gap: 3px;
+        height: 90px;
+    }
+    .zag-info-sl,.text-lin-infor,.text-info-ic{
+        -webkit-text-stroke: 0.08px #fff;
+    }
+}

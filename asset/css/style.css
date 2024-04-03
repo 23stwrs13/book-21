@@ -1,0 +1,489 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: #E9E0D0;
+    min-width: 500px;
+}
+a {
+    text-decoration: none;
+}
+@font-face {
+    font-family: 'Geologica-Bold';
+    src:url(/asset/fonts/Geologica-Bold.ttf);
+}
+@font-face {
+    font-family: 'Geologica-Regular';
+    src:url(/asset/fonts/Geologica-Regular.ttf);
+}
+@font-face {
+    font-family: 'NotoSans-Regular';
+    src:url(/asset/fonts/NotoSans-Regular.ttf);
+}
+@font-face {
+    font-family: 'NotoSans-Bold';
+    src:url(/asset/fonts/NotoSans-Bold.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Bold';
+    src:url(/asset/fonts/Nunito-Bold.ttf);
+}
+@font-face {
+    font-family: 'Nunito-Regular';
+    src:url(/asset/fonts/Nunito-Regular.ttf);
+}
+/* меню */
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: #08204A;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding-top: 10px;
+}
+.nav-ttext {
+    font-size: 25px;
+    color: #fff;
+    font-weight: 800;
+    font-family: 'Geologica-Bold';
+    margin-top: 29px;
+
+}
+.nav-oon{
+    order: 1;
+}
+.cent-nav{
+    order: 2;
+}
+.nav-ttwo{
+    order: 3;
+}
+.logo {
+    width: 116px;
+    height: 90px;
+    background-image: url(../img/logo.png);
+}
+.lin-delet{
+    display: none;
+}
+.nav >a{
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+.burger{
+    display: none;
+    position: relative;
+    z-index: 50;
+    align-items: center;
+    justify-content: flex-end;
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    background: none;
+}
+.open{
+    display: flex !important;
+}
+.burger span{
+    height: 5px;
+    width: 100%;
+    transform: scale(1);
+    background-color: #ffffff;
+}
+.burger::before, .burger::after{
+    content: '';
+    position: absolute;
+    height: 5px;
+    width: 100%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #ffffff;
+    transition: all 0.3s ease 0s;
+}
+.burger::before { top: 0 }
+.burger::after { bottom: 0 }
+.burger.active span { transform: scale(0) }
+.burger.active::before{
+    top: 43%;
+    margin-right: 0;
+    margin-bottom:0;
+    transform: rotate(-45deg) translate(0, -50%);
+}
+.burger.active::after{
+    bottom: 43%;
+    margin-right: 0;
+    margin-bottom:0;
+    transform: rotate(45deg) translate(0,50%);
+}
+/* Подвал */
+.lin-footer,.lin-menu {
+    width: 100%;
+    height: 5px;
+    border: none;
+    background: #8D0606;
+}
+.box-footer {
+    width: 100%;
+    height: 150px;
+    padding-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 250px;
+    background-color: #08204A;
+}
+.footer-logo {
+   width: 173px;
+   height: 134px;
+   margin-top: 16px;
+   background-size: cover;
+   background-image: url(../img/logo-footer.png);
+}
+.nav-footer {
+    display: grid;
+    height: 60px;
+    gap: 10px;
+}
+.foot{
+    margin: 0 auto;
+    height: 25px;
+}
+.icons-footer {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+.iconn{
+    width: 40px;
+    height: 40px;
+    background-size: cover;
+}
+.vk-f {
+    background-image: url(../img/vk-foot.png);
+}
+.tg-f {
+    background-image: url(../img/tg-foot.png);
+}
+.of-sai-f {
+    height: 50px;
+    width: 50px;
+    background-size: cover;
+    background-image: url(../img/of-sai-foot.png);
+}
+/* Страница выставка для родителей */
+/* блок с цитатой */
+.zag-up {
+  color: #ffa800;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'NotoSans-Bold';
+  font-size: 37px;
+  margin-top: 45px;
+  margin-bottom: 50px;
+  -webkit-text-stroke: 2px #8d0606;
+}
+.box-vie {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 50px;
+}
+.text-box-vie {
+    display: grid;
+    width: 40%;
+    gap: 50px;
+}
+.citat-box-vie {
+  color: #08204a;
+  font-family: 'NotoSans-Bold';
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 47px;
+}
+.avtor-box-vie {
+  color: #8d0606;
+  font-family: 'Geologica-Regular';
+  font-size: 30px;
+  margin-left: 50%;
+  font-weight: 600;
+}
+.img-box-vie {
+    margin-top: 70px;
+    margin-bottom: 70px;
+    width: 496px;
+    height: 334px;
+    background-size: cover;
+    background-image: url(../img/parents-book.png);
+}
+.text-idea-viewing{
+    width: 90%;
+    text-align: center;
+    margin: 0 auto;
+    color: #08204A;
+    font-family: 'NotoSans-Regular';
+    font-size: 35px;
+    font-weight: 400;
+    margin-bottom: 50px;
+}
+/* Слайдер просмотра для родителей */
+.slider{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-bottom: 100px;
+}
+.divclaide-knop{
+    height: 70px;
+    width: 70px;
+    margin-top: 265px;
+    background-size: cover;
+}
+.left-sl{
+    background-image: url(../img/right.png);
+}
+.right-sl{
+    background-image: url(../img/left.png);
+}
+.item>img{
+    width: 800px;
+    height: 600px;
+    border: solid 2px #ffa800;
+    border-radius: 20px;
+}
+/* Книжная выставка страница */
+/* слайдер книжной выставки */
+.item02>img{
+    width: 407px;
+    height: 628px;
+    background-size: cover;
+    border: solid 2px #ffa800;
+    border-radius: 20px;
+}
+.book-exh{
+    margin-bottom: 0;
+    margin-top: 0;
+    background-image: url(../img/book-watch.png);
+}
+.book-eh{
+    margin-top: 73px; 
+    margin-bottom: 73px;
+    width: 42%;
+}
+.sliedes-box{
+    display: flex;
+    justify-content: center;
+    gap: 70px;
+    margin-bottom: 100px;
+}
+.slaides-text{
+    width: 30%;
+    display: grid;
+    gap:50px;
+    height: 600px;
+}
+.text-sli-book{
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+}
+.slaides-text>ul>li{
+    color: #08204A;
+    font-family: 'NotoSans-Regular';
+    font-size: 35px;
+    margin-left: 50px;
+}
+/* Слайдер баннер */
+.slid-main {
+    position: relative;
+    max-width: 1920px;
+    margin: 0 auto;
+    overflow: hidden;
+}
+.slider003 {
+    display: flex;
+    transition: transform 0.3s ease;
+}
+.slider003 img {
+    width: 100%;
+    height: auto;
+}
+button {
+    width: 45px;
+    height: 45px;
+    border: none;
+    cursor: pointer;
+    background: none;
+}
+.prev{
+    background-image: url(../img/left003.png);
+}
+.next{
+    background-image: url(../img/right003.png);
+}
+.navig-btn{
+    width: 100px;
+    height: 50px;
+    border-radius: 20px;
+    background-color: #8D0606;
+    display: flex;
+    justify-content: center;
+    top: 90%;
+    margin: 0 auto;
+    transform: translateY(-50%);
+}
+/* текст на баннере */
+.slidders-boxs{
+    position: relative;
+}
+.slid-uupin{
+    position: absolute;
+    width: 100%;
+    margin-top: 30%;
+    margin-bottom: 30px;
+    top: 0;
+}
+.slidders-texts-box {
+    display: flex;
+    justify-content: center;
+    gap: 40%;
+}
+.text-info-school {
+    width: 396px;
+    height: 223px;
+    padding-left: 10px;
+    padding-top: 10px;
+    display: grid;
+    gap: 20px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.4);
+}
+.zag-info-sl {
+  color: #8d0606;
+  font-family: 'Nunito-Bold';
+  font-size: 25px;
+}
+.lines-info {
+    display: grid;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+.lin-in {
+    display: flex;
+    gap: 20px;
+}
+.img-lin-infor {
+    width: 30px;
+    background-size: cover;
+}
+.addres{
+    height: 40px;
+    background-image: url(../img/adress.png);
+}
+.phone{
+    height: 30px;
+    background-image: url(../img/phone.png);
+}
+.mail{
+    height: 23px;
+    background-image: url(../img/mail.png);
+}
+.text-lin-infor {
+    color: #08204a;
+    font-family: 'Nunito-Regular';
+    font-size: 20px;
+    font-weight: 400;
+}
+.uuping{
+    margin-top: 16px;
+}
+.iconic-ihfo {
+    display: grid;
+    gap: 10px;
+    margin-top: 130px;
+    height: 105px;
+}
+.slid-ic{
+    margin: 0 auto;
+}
+.text-info-ic {
+  color: #08204a;
+  text-align: right;
+  font-family: 'Nunito-Bold';
+  font-size: 16px;
+  font-weight: 700;
+  position: relative;
+  width: 240px;
+}
+/* линии про мероприятия и акции */
+.one-line-innfor {
+    display: flex;
+    justify-content: center;
+    gap: 95px;
+    margin-bottom: 50px;
+}
+.innfor-text-box {
+    display: grid;
+    width: 35%;
+}
+.zag-innfor-text-z {
+  color: #08204a;
+  font-family: 'NotoSans-Bold';
+  font-size: 35px;
+}
+.zag-inn-red{
+    color: #8d0606;
+}
+.text-innfor-text-t {
+  color: #404c62;
+  font-family: 'Nunito-Regular';
+  font-size: 25px;
+}
+.link-text {
+    margin-top: 70px;
+    color: #8d0606;
+    font-family: 'Nunito-Regular';
+    font-size: 20px;
+    text-decoration: underline;
+}
+.innfor-img1 {
+    width: 443px;
+    height: 300px;
+    background-size: cover;
+    background-image: url(../img/book-watch.png);
+}
+.innfor-img2 {
+    width: 535px;
+    height: 363px;
+    background-size: cover;
+    background-image: url(../img/parents-book.png);
+}
+.innfor-img3 {
+    width: 349px;
+    height: 301px;
+    background-size: cover;
+    background-image: url(../img/seils1.png);
+}
+.innfor-img4 {
+    width: 352px;
+    height: 313px;
+    background-size: cover;
+    background-image: url(../img/seils2.png);
+}
+.lit{
+    height: 150px;
+}
+.litt{
+    height: 200px;
+}
+.mminn{
+    font-size: 25px;
+    height: 70px;
+}
+.mina{
+    font-size: 20px;
+}

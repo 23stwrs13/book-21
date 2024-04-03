@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Открытый просмотр “Семейному чтению - наше почтение”</title>
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <link rel="stylesheet" href="./asset/css/media.css">
+</head>
+<body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- меню -->
+            <nav class="nav">
+                <div class="cent-nav"><a href="./main.html"><div class="logo"></div></a></div>
+                <div class="nav-text-navig nav-oon"><a  class="nav-ttext" href="./Book_exhibition.html"><br>Книжная выставка</a></div>
+                <div class="nav-text-navig nav-ttwo"><a class="nav-ttext" href="./Viewing_for_parents.html"><br>Просмотр для родителей</a></div>
+            </nav>
+            <div class="lin-delet">.</div>
+            <div class="burger">
+                <span></span>
+            </div>
+        </header>
+        <main class="main">
+            <hr class="lin-menu">
+            <h1 class="zag-up">Открытый просмотр<br>“Семейному чтению - наше почтение”</h1>
+            <div class="box-vie">
+                <div class="text-box-vie">
+                    <div class="citat-box-vie">«Если в доме много книг, если они являются предметом ува­жения и любви, если они все время в ходу и вокруг себя малыш видит читающих, а то и слышит чтение вслух, и при этом чита­ющие и слушающие то смеются, то обсуждают с жаром прочи­танное — интерес к печатному слову, конечно, у него возни­кнет и будет расти.»</div>
+                    <div class="avtor-box-vie">Л.В.Успенский</div>
+                </div>
+                <div class="img-box-vie"></div>
+            </div>
+            <div class="text-idea-viewing">Педагогическое просвещение родителей<br>Важность чтения всей семьи в современных<br>реалях общества.</div>
+            <h1 class="zag-up">Фотографии с места проведения</h1>
+            
+            <div class="slider">
+                <a class="previous-mobile" onclick="previousSlide()"><div class="divclaide-knop left-sl"></div></a>
+                <div class="item">
+                    <a class="previous" onclick="previousSlide()"></a>          
+                    <img src="./asset/img/skaid-parents1.png" alt="01">
+                    <a class="next" onclick="nextSlide()"></a>
+                </div>            
+                <div class="item">
+                    <a class="previous" onclick="previousSlide()"></a>
+                    <img src="./asset/img/skaid-parents2.png" alt="02">
+                    <a class="next" onclick="nextSlide()"></a>
+                </div>            
+                <div class="item">
+                    <a class="previous" onclick="previousSlide()"></a>           
+                    <img src="./asset/img/skaid-parents3.png" alt="03">
+                    <a class="next" onclick="nextSlide()"></a>
+                </div>
+                <div class="item">
+                    <a class="previous" onclick="previousSlide()"></a>           
+                    <img src="./asset/img/skaid-parents4.png" alt="03">
+                    <a class="next" onclick="nextSlide()"></a>
+                </div>
+                <a class="next-mobile" onclick="nextSlide()"><div class="divclaide-knop right-sl"></div></a>                    
+            </div>
+        </main>
+        <footer class="footer">
+            <hr class="lin-footer">
+            <div class="box-footer">
+                <a href="./main.html"><div class="footer-logo"></div></a>
+                <div class="nav-footer">
+                    <div class="nav-text-navig foot"><a  class="nav-ttext" href="./Book_exhibition.html"><br>Книжная выставка</a></div>
+                    <div class="nav-text-navig foot"><a class="nav-ttext" href="./Viewing_for_parents.html"><br>Просмотр для родителей</a></div>
+                </div>
+                <div class="icons-footer">
+                    <div class="vk-f iconn"></div>
+                    <div class="of-sai-f"></div>
+                    <div class="tg-f iconn"></div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script>
+        document.querySelector('.burger').addEventListener('click', function() {
+            this.classList.toggle('active');
+            document.querySelector('.nav').classList.toggle('open');
+        });
+        let slideIndex = 1;
+        showSlides(slideIndex);
+        function nextSlide() {
+           showSlides(slideIndex += 1);
+        }
+        function previousSlide() {
+           showSlides(slideIndex -= 1);  
+        }
+        function currentSlide(n) {
+           showSlides(slideIndex = n);
+        }
+        function showSlides(n) {
+           let slides = document.getElementsByClassName("item");
+            if (n > slides.length) {
+               slideIndex = 1
+            }
+            if (n < 1) {
+               slideIndex = slides.length
+            }
+            for (let slide of slides) {
+               slide.style.display = "none";
+            }
+            slides[slideIndex - 1].style.display = "flex";    
+        }
+    </script>
+</body>
+</html>
